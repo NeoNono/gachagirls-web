@@ -7,6 +7,8 @@
     })
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-{@html response}
+<div>
+    <h1>Welcome to GachaGirls!</h1>
+    <a href="create-player">Create player</a>
+    <a href="login">Log in</a>
+</div>
