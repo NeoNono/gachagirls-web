@@ -1,7 +1,9 @@
 <script>
     import { onMount } from 'svelte';
-    export let data;
-    $: playerId = 0;
+    /** @type {{data: any}} */
+    let { data } = $props();
+    let playerId = $state(0);
+    
     onMount(async () => {
         playerId = await data.result;
     })

@@ -1,7 +1,9 @@
 <script>
     import { onMount } from "svelte";
-    export let data;
-    $: response = "please wait"
+    /** @type {{data: any}} */
+    let { data } = $props();
+    let response = $state("please wait");
+    
     onMount(async () => {
         response = await data.result;
     })
