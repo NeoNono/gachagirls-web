@@ -37,6 +37,8 @@
     <p>ID {response.id}</p>
     <p>Your balance: {response.balance}</p>
     <p>Your characters:</p>
+    <a href="{response.id}/fights">Fight an enemy</a>
+    <a href="{response.id}/roulette">Spin the roulette and try your luck!</a>
     <div class="char-list">
         {#each characters as {ownedCharacterId, appearance, health, stamina, damage}}
         <div class="char">
@@ -54,6 +56,15 @@
 </div>
 
 <style>
+    a {
+        background-color: pink;
+        border-color: blueviolet;
+        color: black;
+        border-width: 2px;
+        border-radius: 4px;
+        display: border-box;
+    }
+
     .char {
         display: flex;
         flex-direction: column;
