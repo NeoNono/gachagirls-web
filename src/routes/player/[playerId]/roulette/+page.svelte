@@ -28,6 +28,41 @@
     })
 </script>
 
-<h1>Try your luck!</h1>
-<p>Your current balance: {response.balance}</p>
-<button onclick={pullRoulette}>Pull</button>
+<div>
+    <h1>Try your luck!</h1>
+    <p>Your current balance: {response.balance}</p>
+    <button onclick={pullRoulette}>Pull</button>
+</div>
+
+
+
+<style>
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        text-align: center;
+    }
+
+      button {
+    background-color: lightblue;
+    border: 2px solid blue;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    }
+
+    button:hover {
+    background-color: lightcyan;
+    }
+
+    button:active {
+    background-color: mediumslateblue;
+    color: white;
+    }
+</style>

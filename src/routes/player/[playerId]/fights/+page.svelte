@@ -24,9 +24,30 @@
     {/each}
 </div>
 
+
 <style>
     .char-list {
         display: flex;
         flex-direction: row;
     }
-</style>
+
+    button {
+    background-color: lightblue;
+    border: 2px solid blue;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    }
+
+    button:hover {
+    background-color: lightcyan;
+    }
+
+    button:active {
+    background-color: mediumslateblue;
+    color: white;
+    }
+
+</style> 
